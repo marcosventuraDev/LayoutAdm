@@ -58,6 +58,7 @@ body{
 
 .logo{
     width: 50px;
+    margin-left: 20px;
 }
 
 .notification,
@@ -87,7 +88,6 @@ body{
     width: 40px;
     height: 40px;
     border-radius: 50%;
-  
     object-fit: cover;
 }
 
@@ -101,20 +101,65 @@ body{
     width: 280px;
     border-radius: 7px;
     display: block;
-  
-
+    padding: 10px;
 }
 
 .dropdown-content{
     max-height: 400px;
-    overflow-y: auto;
+   
+  
 
 }
+
 .dropdown-menu li,
 .dropdown-menu .item{
     display: flex;
     align-items: center;
+    padding: 10px 15px 10px 10px;
+    border-bottom: 1px solid var(--second-bg-color);
+    cursor: pointer;
+    font-size: 15px;
+}
 
+.dropdown-menu li img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+.dropdown-menu li .text{
+    font-style: italic;
+    margin-left: 10px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap; */
+   
+}
+
+.dropdown-menu li:hover,
+.dropdown-menu .item:hover{
+    background-color: var(--second-bg-color);
+}
+
+
+.dropdown-menu li:hover .text
+{
+    overflow:visible;
+    white-space: normal;
+    padding-right: 10px;
+}
+
+.dropdown-menu .item span{
+    margin-right: 15px;
+}
+
+.dropdown-menu.setting{
+    width: 150px;
+}
+.dropdown-menu.active{
+    display: block;
 }
 /* Fim dropdown navbar*/
 
