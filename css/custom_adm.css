@@ -46,7 +46,6 @@ body{
 .navbar .navbar-content{
     display: flex;
     align-items: center;
-
 }
 
 .navbar .bars,
@@ -81,7 +80,6 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-     
 }
 
 .avatar img{
@@ -100,15 +98,12 @@ body{
     background-color: var(--main-bg-color);
     width: 280px;
     border-radius: 7px;
-    display: block;
+    display: none;
     padding: 10px;
 }
 
 .dropdown-content{
     max-height: 400px;
-   
-  
-
 }
 
 .dropdown-menu li,
@@ -134,8 +129,7 @@ body{
     margin-left: 10px;
     text-overflow: ellipsis;
     overflow: hidden;
-    white-space: nowrap; */
-   
+    white-space: nowrap;
 }
 
 .dropdown-menu li:hover,
@@ -144,8 +138,7 @@ body{
 }
 
 
-.dropdown-menu li:hover .text
-{
+.dropdown-menu li:hover .text{
     overflow:visible;
     white-space: normal;
     padding-right: 10px;
