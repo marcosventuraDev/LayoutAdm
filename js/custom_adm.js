@@ -16,9 +16,14 @@ dropMenu(button_avatar, drop_avatar);
 function dropMenu(button, dropdown){
   button.addEventListener('click',()=>{
 
-    dropdown == drop_notification && drop_avatar.classList.contains('show')?
-    drop_avatar.classList.remove('show'):
-    drop_notification.classList.remove('show')
+    switch (dropdown) {
+      case drop_notification:drop_avatar.classList.remove('show')
+        
+        break;
+    
+      case  drop_avatar:drop_notification.classList.remove('show')
+        break;
+    }
 
     // adiciona um evento de clique ao botão para abrir o menu suspenso
     
@@ -31,7 +36,7 @@ function dropMenu(button, dropdown){
       // verifica se o usuário clicou fora do menu suspenso e do botão
       if (event.target != dropdown && event.target != button) {
         // fecha o menu suspenso
-      dropdown.classList.remove('show')
+      dropdown.classList.remove('show');
       }
     } 
    
