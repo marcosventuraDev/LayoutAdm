@@ -163,14 +163,16 @@ body{
 .dropdown-menu.setting{
     width: 150px;
 }
-#item-1, #item-2, #item-3 {
+.show {display: block;}
+
+/* #item-1, #item-2, #item-3 {
     display: none;
 }
 
 #item-1:checked ~  .navbar-content .notification .dropdown-menu,
 #item-2:checked ~  .navbar-content .avatar .dropdown-menu{
     display: block;
-}
+} */
 
 
 /* Fim dropdown navbar*/
