@@ -12,6 +12,7 @@
     --bg-color:#ecedf0;
     --second-color:#f1f1f1;
     --third-color:#9fa7bd;
+    --fourth-color:#FFF;
     --main-bg-color:#192039;
     --second-bg-color:#1e2746;
     --third-bg-color:#3a7afe;
@@ -249,6 +250,84 @@ body{
 }
 
 
-/*Fim Sidebar*/
+/*Fim Sidebar*/ 
 
+/*Iníco Conteúdo*/
+.content .wrapper {
+    width: 100%;
+    padding: 10px;
+    background-color: var(--bg-color);
+   
+}
+
+.content .row {
+    background-color: var(--fourth-color);
+    border-radius: 6px;
+    /* margin: 10x; */
+}
+
+.wrapper .row {
+    display: flex;
+    
+    padding: 5px;
+    flex-wrap: wrap;
+}
+
+/*Início Dashboard*/
+.row .box{
+    width:19.5%;
+    margin: 5px 1%;
+    height: 150px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    color: var(--fourth-color);
+    border-radius: 5px;
+    overflow: hidden;
+    flex-direction: column;
+    box-shadow: 0 3px 4px 1px rgba(0,0,0,0.12);
+}
+
+.row .box-first{
+    background-color: var(--primary-color);
+}
+.row .box-second{
+    background-color: var(--success-color);
+}
+.row .box-third{
+    background-color: var(--warning-color);
+}
+.row .box-fourth{
+    background-color: var(--danger-color);
+}
+
+
+.box span{
+    margin: 5px 0;
+    font-size: 17px;
+    position: relative;
+}
+
+ @media(max-width:1421px){
+    .row .box{
+    width: 25%;
+    }
+} 
+
+@media (max-width:966px) {
+    .row .box{
+        width: 40%;
+    }
+    
+}
+@media (max-width:779px){
+    .row .box{
+        width: 98%;
+    }
+}
+/*Fim Dashboard*/
+
+/*Fim Conteúdo*/
 
