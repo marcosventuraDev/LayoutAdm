@@ -398,7 +398,71 @@ body{
 /*Fim pagination*/
 
 
+
+
+
 /*Fim Listar*/
+/*Inícion Personalizar botão*/
+.btn{
+    padding: 5px 8px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 15px;
+    transition: all .3s ease;
+}
+.btn-primary{
+    background-color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+    color: var(--fourth-color);
+}
+.btn-success{
+    background-color: var(--success-color);
+    border: 1px solid var(--success-color);
+    color: var(--fourth-color);
+}
+.btn-primary{
+    background-color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+    color: var(--fourth-color);
+}
+.btn-warning{
+    background-color: var(--warning-color);
+    border: 1px solid var(--warning-color);
+    color: var(--fourth-color);
+}
+.btn-danger{
+    background-color: var(--danger-color);
+    border: 1px solid var(--danger-color);
+    color: var(--fourth-color);
+}
+.btn-info{
+    background-color: var(--info-color);
+    border: 1px solid var(--info-color);
+    color: var(--fourth-color);
+}
+
+.btn:hover{
+    background-color: var(--fourth-color);
+}
+
+.btn-primary:hover{
+    color: var(--primary-color);
+}
+.btn-success:hover{
+   color: var(--success-color);
+}
+.btn-warning:hover{
+   color: var(--warning-color);
+}
+.btn-danger:hover{
+   color: var(--danger-color);
+}
+.btn-info:hover{
+   color:var(--info-color);
+}
+
+
+/*Fim Personalizar botão*/
 
 
 /*Fim Conteúdo*/
