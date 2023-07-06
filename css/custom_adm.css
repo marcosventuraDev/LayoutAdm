@@ -364,8 +364,29 @@ body{
     padding: 8px;
 }
 
+@media (max-width:540px){
+    .table-sm-none {
+        display: none;
+    }
+}
+@media (max-width:720px){
+    .table-md-none {
+        display: none;
+    }
+}
+@media (max-width:960px){
+    .table-lg-none {
+        display: none;
+    }
+}
+@media (max-width:1140px){
+    .table-xl-none {
+        display: none;
+    }
+}
 
-/*pagination*/
+
+/* início pagination*/
     .content-pagination{
         
         margin: 15px 0;
