@@ -55,9 +55,7 @@ body{
     margin-left: 20px;
     align-items: center;
     cursor: pointer;
-    
     margin-right: 5px;
-  
 }
 
 .logo{
@@ -72,8 +70,6 @@ body{
     position: relative;
     padding: 5px;
     border-radius: 50%;
-
-
 }
 
 .notification .number{
@@ -97,7 +93,6 @@ body{
     height: 40px;
     border-radius: 50%;
     object-fit: cover;
-    
 }
 
 /* início dropdown navbar*/
@@ -187,8 +182,10 @@ body{
     top: 60px;
     background-color: var(--main-bg-color);
     box-shadow: 0 1px 4 px 1px rgba(0,0,0,0.12);
-    overflow-y: auto;
+    overflow-y: auto; 
     overflow-x: none;
+    overflow-x: hidden;
+    transition: .5s width ease-in-out;
     flex-shrink: 0;
      
 }
@@ -203,7 +200,7 @@ body{
 }
 
 .content .sidebar:hover,
-.content .sidebar:active{
+.content .sidebar.active{
     width: 250px;
 }
 
@@ -216,7 +213,6 @@ body{
     cursor: pointer;
     transition: .3s background ease;
     font-size: 16px;
-
 }
 
 .sidebar a{
@@ -226,7 +222,6 @@ body{
 .sidebar a:hover{
     background-color: var(--second-bg-color);
     color: var(--activie-color);
-
 }
 
 .sidebar .sidebar-nav.active{
