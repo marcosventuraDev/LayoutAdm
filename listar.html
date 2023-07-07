@@ -22,7 +22,7 @@
         
 
         
-          <div  class="navbar-content "> 
+          <div  class="navbar-content navbar-menu "> 
 
               
                     <div class="notification" >
@@ -78,9 +78,9 @@
     <div class="content">
         <!-- Início da Sidebar-->
         <div class="sidebar">
-            <a href="index.html" class="sidebar-nav active" ><i class="icon fa-solid fa-house" ></i><span>Dashboard</span></a>
+            <a href="index.html" class="sidebar-nav " ><i class="icon fa-solid fa-house" ></i><span>Dashboard</span></a>
             
-            <a href="listar.html" class="sidebar-nav"><i class="icon fas fa-users"></i><span>Listar</span></a>
+            <a href="listar.html" class="sidebar-nav active"><i class="icon fas fa-users"></i><span>Listar</span></a>
             
             <a href="login.html" class="sidebar-nav"><i class="icon fa-solid fa-right-from-bracket"></i><span>Sair</span></a>
         </div>
@@ -94,7 +94,8 @@
                 <div class="row">
                     <div class="top-list">
                         <span class="title-content">Lista</span>
-                        <div class="top-list-right"><button type="button" class="btn btn-success">Cadastrar</button></div>
+                        <!-- <div class="top-list-right"><button type="button" class="btn btn-success">Cadastrar</button></div> -->
+                        <div class="top-list-right"><button type="button" class="btn btn-success"><i class="fa-solid fa-square-plus"></i></button></div>
                         
                     </div>
 
@@ -119,10 +120,71 @@
                                 <td class="list-body-content table-md-none">coluna 2</td>
                                 <td class="list-body-content table-lg-none">coluna 3</td>
                                 <td class="list-body-content">
-                                    <button type="button" class="btn btn-primary">Visualizar</button>
-                                    <button type="button" class="btn btn-warning">Editar</button>
-                                    <button type="button" class="btn btn-danger">Apagar</button>
                                     
+                                    <div class=" dropdown-action">
+                                        <button  class="btn btn-primary dropdown-btn-action">Ações</button>
+                                        <div class=" actionDropdown dropdown-action-item">
+                                        
+                                            <a href="#">Visualizar</a>
+                                            <a href="#">Editar</a>
+                                            <a href="#">Apagar</a>
+                                        </div>
+                                    </div>
+                                   
+                                    
+                                    <!-- 
+                                    /*btn com icones */
+                                    <button type="button" class="btn btn-primary"><i class="fa-solid fa-eye"></i></button>
+                                    <button type="button" class="btn btn-warning"><i class="fa-solid fa-pen-to-square"></i></button>
+                                    <button type="button" class="btn btn-danger"><i class="fa-solid fa-trash-can"></i></button>
+                                    
+                                    /*btn com texto*/
+                                        <button type="button" class="btn btn-primary">Visualizar</button>
+                                    <button type="button" class="btn btn-warning">Editar</button>
+                                    <button type="button" class="btn btn-danger">Apagar</button> -->
+                                    
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="list-body-content">1</td>
+                                <td class="list-body-content">João</td>
+                                <td class="list-body-content table-sm-none">joao@gmail.com</td>
+                                <td class="list-body-content table-sm-none">coluna 1</td>
+                                <td class="list-body-content table-md-none">coluna 2</td>
+                                <td class="list-body-content table-lg-none">coluna 3</td>
+                                <td class="list-body-content">
+                                    
+                                    <div class=" dropdown-action">
+                                        <button  class="btn btn-primary dropdown-btn-action">Ações</button>
+                                        <div class="actionDropdown dropdown-action-item ">
+                                        
+                                            <a href="#">Visualizar</a>
+                                            <a href="#">Editar</a>
+                                            <a href="#">Apagar</a>
+                                        </div>
+                                    </div>
+    
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="list-body-content">1</td>
+                                <td class="list-body-content">João</td>
+                                <td class="list-body-content table-sm-none">joao@gmail.com</td>
+                                <td class="list-body-content table-sm-none">coluna 1</td>
+                                <td class="list-body-content table-md-none">coluna 2</td>
+                                <td class="list-body-content table-lg-none">coluna 3</td>
+                                <td class="list-body-content">
+                                    
+                                    <div class=" dropdown-action">
+                                        <button  class="btn btn-primary dropdown-btn-action">Ações</button>
+                                        <div  class="actionDropdown dropdown-action-item">
+                                        
+                                            <a href="#">Visualizar</a>
+                                            <a href="#">Editar</a>
+                                            <a href="#">Apagar</a>
+                                        </div>
+                                    </div>
+                                   
                                 </td>
                             </tr>
                         </tbody>
