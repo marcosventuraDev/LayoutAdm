@@ -25,13 +25,14 @@
           <div  class="navbar-content navbar-menu "> 
 
               
-                    <div class="notification" >
+                    <div class="notification btn-dropdown dropdown-btn-action" >
                         <div>
 
-                            <i class="fa-solid fa-bell button_notification" ></i>
+                            <i class="fa-solid fa-bell button_notification dropdown-btn-action" onclick="btn_dropdown(1)" ></i>
                             <span class="number">7</span>
                         </div>
-                        <div  class="dropdown-menu drop_notification">        
+                        
+                        <div  class="dropdown-menu drop_1 actionDropdown " >        
                             <div class="dropdown-content "  >
                                 <li>
                                     <img src="./img/users/users.png" alt="usuario" srcset="" width="40">
@@ -50,9 +51,9 @@
                     </div>
           
         
-                        <div class="avatar">
-                            <img src="./img/users/users.png" alt="Usuário" srcset="" width="40" class="button_avatar">
-                            <div class="dropdown-menu drop_avatar setting">
+                        <div class="avatar  btn-dropdown dropdown-btn-action" >
+                            <img src="./img/users/users.png" alt="Usuário" srcset="" width="40" class="button_avatar dropdown-btn-action" onclick="btn_dropdown(2)">
+                            <div class="dropdown-menu drop_2 setting actionDropdown">
                                 <div class="item">
                                     <span class="fa-solid fa-user"></span>Perfil
                                 </div>
@@ -121,9 +122,9 @@
                                 <td class="list-body-content table-lg-none">coluna 3</td>
                                 <td class="list-body-content">
                                     
-                                    <div class=" dropdown-action">
+                                    <div class=" dropdown-action btn-dropdown" onclick="btn_dropdown(3)" >
                                         <button  class="btn btn-primary dropdown-btn-action">Ações</button>
-                                        <div class=" actionDropdown dropdown-action-item">
+                                        <div class=" actionDropdown dropdown-action-item drop_3">
                                         
                                             <a href="#">Visualizar</a>
                                             <a href="#">Editar</a>
@@ -154,9 +155,9 @@
                                 <td class="list-body-content table-lg-none">coluna 3</td>
                                 <td class="list-body-content">
                                     
-                                    <div class=" dropdown-action">
-                                        <button  class="btn btn-primary dropdown-btn-action">Ações</button>
-                                        <div class="actionDropdown dropdown-action-item ">
+                                    <div class=" dropdown-action btn-dropdown">
+                                        <button  class="btn btn-primary dropdown-btn-action "onclick="btn_dropdown(4)">Ações</button>
+                                        <div class="actionDropdown dropdown-action-item drop_4">
                                         
                                             <a href="#">Visualizar</a>
                                             <a href="#">Editar</a>
@@ -175,9 +176,9 @@
                                 <td class="list-body-content table-lg-none">coluna 3</td>
                                 <td class="list-body-content">
                                     
-                                    <div class=" dropdown-action">
-                                        <button  class="btn btn-primary dropdown-btn-action">Ações</button>
-                                        <div  class="actionDropdown dropdown-action-item">
+                                    <div class=" dropdown-action btn-dropdown">
+                                        <button  class="btn btn-primary dropdown-btn-action" onclick="btn_dropdown(5)">Ações</button>
+                                        <div  class="actionDropdown dropdown-action-item drop_5">
                                         
                                             <a href="#">Visualizar</a>
                                             <a href="#">Editar</a>

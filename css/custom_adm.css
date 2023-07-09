@@ -416,11 +416,15 @@ body{
 
 }
 
+.show{
+    display: block;
+}
+/*
 .show-dropdown-action{
     display: block;
 }
 
-/* .dropdown-btn-action{
+ .dropdown-btn-action{
     background-color: var(--primary-color);
     color: var(--fourth-color);
     padding: 5px 8px;
