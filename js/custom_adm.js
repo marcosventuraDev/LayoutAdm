@@ -4,22 +4,23 @@
  
  function btn_dropdown(id){
   closeDropdownAction() 
-  document.querySelector(".drop_"+id).classList.toggle('show');
+    document.querySelector(".drop_"+id).classList.toggle('show');
   
  }
+
 
  
 
 
  window.onclick = function(event){
    if(!event.target.matches(".dropdown-btn-action")){
-    closeDropdownAction()
+     closeDropdownAction() 
    }
  }
 
   function  closeDropdownAction(){
     var dropdowns = document.getElementsByClassName("actionDropdown");
-   var i;
+    var i;
    console.log(dropdowns.length)
    
    for (i = 0; i < dropdowns.length; i++){
@@ -30,7 +31,7 @@
      }
    }
  } 
- 
+  
 // Fim Dropdown navbar */
 
 //Sidebar toogel/ bars

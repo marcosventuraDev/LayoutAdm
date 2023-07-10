@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./img/icon/logo.ico" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/99acd50083.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/custom_adm.css">
+    <title>Document</title>
+</head>
+
+
+<body class="d-flex" id="teste">
+   
+    <!--Início Nav-bar-->
+    <nav class="navbar">
+        <div class="navbar-content">
+            <div class="bars">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <!--incluir logo-->
+            <img src="./img/logo/logo.png" alt="" srcset="" class="logo">
+        </div>
+    
+          <div  class="navbar-content navbar-menu "> 
+
+              
+                    <div class="notification btn-dropdown dropdown-btn-action" >
+                        <div>
+
+                            <i class="fa-solid fa-bell button_notification dropdown-btn-action" onclick="btn_dropdown(1)" ></i>
+                            <span class="number">7</span>
+                        </div>
+                        
+                        <div  class="dropdown-menu drop_1 actionDropdown " >        
+                            <div class="dropdown-content "  >
+                                <li>
+                                    <img src="./img/users/users.png" alt="usuario" srcset="" width="40">
+                                    <div class="text">
+                                    Lorem ipsum dolor skljflkgsdkfgçlskdfgkdgfçlkjit amet .
+                                    </div>                   
+                                </li>
+                                <li>
+                                    <img src="./img/users/users.png" alt="usuario" srcset="" width="40">
+                                    <div class="text">
+                                        Lorem ipsum dolor jkasdlkfçasklçfks skljflkgsdkfgçlskdfgkdgfçlkjit amet.
+                                    </div>                   
+                                </li>
+                            </div>
+                        </div> 
+                    </div>
+          
+        
+                        <div class="avatar  btn-dropdown dropdown-btn-action" >
+                            <img src="./img/users/users.png" alt="Usuário" srcset="" width="40" class="button_avatar dropdown-btn-action" onclick="btn_dropdown(2)">
+                            <div class="dropdown-menu drop_2 setting actionDropdown">
+                                <div class="item">
+                                    <span class="fa-solid fa-user"></span>Perfil
+                                </div>
+                                <div class="item">
+                                    <span class="fa-solid fa-gear"></span>Configuração
+                                </div>
+                                <div class="item">
+                                    <span class="fa-solid fa-right-from-bracket"></span>Sair
+                                </div>
+                            </div>  
+                        </div>          
+                 
+         </div>
+
+    </nav>
+    <!--Fim Nav-bar-->
+
+    <!--Início Conteúdo-->
+    <div class="content">
+        <!-- Início da Sidebar-->
+        <div class="sidebar">
+            <a href="index.html" class="sidebar-nav " ><i class="icon fa-solid fa-house" ></i><span>Dashboard</span></a>
+            
+            <a href="listar.html" class="sidebar-nav active"><i class="icon fas fa-users"></i><span>Listar</span></a>
+            
+            <a href="login.html" class="sidebar-nav"><i class="icon fa-solid fa-right-from-bracket"></i><span>Sair</span></a>
+        </div>
+
+
+
+        <!--Fim da Sidebar -->
+        
+        <!-- Inícion do contepudo do administrativo -->
+        <div class="wrapper">
+                <div class="row">
+                    <div class="top-list">
+                        <span class="title-content">Lista</span>
+                         <div class="top-list-right">
+                             <a href="listar.html" type="button" class="btn btn-info">Listar</a> 
+                      <!--  <div class="top-list-right"><button type="button" class="btn btn-success"><i class="fa-solid fa-square-plus"></i></button></div>-->
+                        
+                         </div>
+                    </div>
+
+                    
+
+
+        <!-- Fim do contepudo do administrativo -->
+        
+        
+    </div>
+    <!--Fim Conteúdo-->
+
+    <script src="./js/custom_adm.js">
+        
+    </script>
+    
+</body>
+</html>
