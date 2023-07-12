@@ -8,8 +8,6 @@
     if(!document.querySelector(".drop_"+id).classList.contains('show')){
       closeDropdownAction() 
     }
-    
-   
     document.querySelector(".drop_"+id).classList.toggle('show');
  }
 

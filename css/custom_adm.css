@@ -367,13 +367,26 @@ body{
     .row .box{
         width: 98%;
     }
+    .row-input .column{
+        width: 95%;
+
+    }
+    .row-input{
+        flex-direction: column;
+
+        
+    }
+    .row-input .margin-top-search{
+        margin: 0;
+
+    }
 }
 /*Fim Dashboard*/
 
 /*Início Listar*/
 .row .top-list{
     width: 100%;
-    overflow: hidden;
+    
 }
 
 .top-list .title-content{
@@ -455,9 +468,7 @@ body{
 
 }
 
-.show{
-    display: block !important;
-}
+
 /*
 .show-dropdown-action{
     display: block;
@@ -526,11 +537,22 @@ form.form-adm{
 
 .row-input{
     width: 100%;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 20px 30px;
-    margin-bottom: 20px;
    
+    display: flex;
+    align-items: center;
+      /*  display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); */
+  /*   gap: 20px 30px; */
+    margin-bottom: 20px;
+}
+.margin-top-search{
+    margin-top: 25px;
+}
+.column{
+    width: 100%;
+    padding: 10px;
+    
+
     
 }
 
@@ -683,7 +705,12 @@ border-color: var(--site-color);
 
 /*Fim Personalizar botão*/
 
+/*Início Pesquisar*/
+
+
+/*Fim Pesquisar*/
+
 
 /*Fim Conteúdo*/
 
-.show {display: block;}
+.show {display: block !important;}

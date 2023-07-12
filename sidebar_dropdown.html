@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+    
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./img/icon/logo.ico" type="image/x-icon">
     <script src="https://kit.fontawesome.com/99acd50083.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/custom_adm.css">
-    <title>sidebar_dropdown</title>
+    <title>Listar</title>
 </head>
+
+
 <body class="d-flex" id="teste">
    
     <!--Início Nav-bar-->
@@ -19,19 +22,18 @@
             <!--incluir logo-->
             <img src="./img/logo/logo.png" alt="" srcset="" class="logo">
         </div>
-        
-
-        
-          <div  class="navbar-content "> 
+    
+          <div  class="navbar-content navbar-menu "> 
 
               
-                    <div class="notification" >
+                    <div class="notification btn-dropdown dropdown-btn-action" >
                         <div>
 
-                            <i class="fa-solid fa-bell button_notification" ></i>
+                            <i class="fa-solid fa-bell button_notification dropdown-btn-action" onclick="btn_dropdown(1)" ></i>
                             <span class="number">7</span>
                         </div>
-                        <div  class="dropdown-menu drop_notification">        
+                        
+                        <div  class="dropdown-menu drop_1 actionDropdown " >        
                             <div class="dropdown-content "  >
                                 <li>
                                     <img src="./img/users/users.png" alt="usuario" srcset="" width="40">
@@ -50,9 +52,9 @@
                     </div>
           
         
-                        <div class="avatar">
-                            <img src="./img/users/users.png" alt="Usuário" srcset="" width="40" class="button_avatar">
-                            <div class="dropdown-menu drop_avatar setting">
+                        <div class="avatar  btn-dropdown dropdown-btn-action" >
+                            <img src="./img/users/users.png" alt="Usuário" srcset="" width="40" class="button_avatar dropdown-btn-action" onclick="btn_dropdown(2)">
+                            <div class="dropdown-menu drop_2 setting actionDropdown">
                                 <div class="item">
                                     <span class="fa-solid fa-user"></span>Perfil
                                 </div>
@@ -63,13 +65,9 @@
                                     <span class="fa-solid fa-right-from-bracket"></span>Sair
                                 </div>
                             </div>  
-                        </div>
-               
+                        </div>          
                  
          </div>
-
-
-    
 
     </nav>
     <!--Fim Nav-bar-->
@@ -80,31 +78,30 @@
         <div class="sidebar">
             <a href="index.html" class="sidebar-nav" ><i class="icon fa-solid fa-house" ></i><span>Dashboard</span></a>
 
-            <button class="dropdown-btn active">
+            <button class="dropdown-btn active dropdown-btn-action" onclick="btn_dropdown(3)">
                 <i class="icon fa-solid fa-users"></i><span>dropdown</span><i class="fa-solid fa-caret-down"></i>
             </button>
-            <div class="dropdown-container active">
+            <div class="dropdown-container active drop_3">
                 
                 <a href="#" class="sidebar-nav"><i class="icon fa-solid fa-user-check"></i><span>link 1</Link></span></a>
                 <a href="#" class="sidebar-nav"><i class="icon fa-solid fa-user-gear"></i><span>link 3</Link></a>
                 <a href="#" class="sidebar-nav active"><i class="icon fa-solid fa-user-lock"></i><span>link 3</Link></a>
                 </div>
+
+                <button class="dropdown-btn dropdown-btn-action" onclick="btn_dropdown(4)">
+                    <i class="icon fa-solid fa-globe"></i><span>dropdown</span><i class="fa-solid fa-caret-down"></i>
+                </button>
+                <div class="dropdown-container drop_4">
+                    <a href="#" class="sidebar-nav"><i class="icon fa-solid fa-car-rear"></i><span>link 1</Link></a>
+                    <a href="#" class="sidebar-nav"><i class="icon fa-solid fa-bus"></i><span>link 2</Link></a>
+                    <a href="#" class="sidebar-nav"><i class="icon fa-solid fa-ship"></i><span>link 3</Link></a>
+                </div>
             
-            <a href="listar.html" class="sidebar-nav "><i class="icon fas fa-users"></i><span>Listar</span></a>
+            <a href="listar.html" class="sidebar-nav "><i class="icon fas fa-list"></i><span>Listar</span></a>
             <a href="formulario.html" class="sidebar-nav" ><i class="icon fa-solid fa-file-lines" ></i><span>Formulário</span></a>
             <a href="visualizar.html" class="sidebar-nav " ><i class="icon fa-solid fa-eye" ></i><span>Visualizar</span></a>
             <a href="login.html" class="sidebar-nav"><i class="icon fa-solid fa-right-from-bracket"></i><span>Sair</span></a>
 
-            <button class="dropdown-btn">
-                <i class="icon fa-solid fa-users"></i><span>dropdown</span><i class="fa-solid fa-caret-down"></i>
-            </button>
-            <div class="dropdown-container">
-                
-                <a href="#" class="sidebar-nav"><i class="icon fa-solid fa-globe"></i><span>link 1</Link></span></a>
-                <a href="#" class="sidebar-nav"><i class="icon fa-solid fa-car-rear"></i><span>link 2</Link></a>
-                <a href="#" class="sidebar-nav"><i class="icon fa-solid fa-bus"></i><span>link 3</Link></a>
-                <a href="#" class="sidebar-nav"><i class="icon fa-solid fa-ship"></i><span>link 4</Link></a>
-            </div>
         </div>
 
 
