@@ -277,7 +277,7 @@ body{
     top: 0;
     height: 100%;
     width: 5px;
-    background-color: var(--bg-color);
+    background-color: var(--third-color);
    
 }
 
@@ -311,7 +311,7 @@ body{
 
 .wrapper .row {
     display: flex;
-    
+    justify-content: center;
     padding: 10px;
     flex-wrap: wrap;
 }
@@ -333,10 +333,14 @@ body{
     box-shadow: 0 3px 4px 1px rgba(0,0,0,0.12);
 }
 
-.row .box-first{
-    background-color: var(--primary-color);
+.row .box-first,
+.row .box-second,
+.row .box-second,
+.row .box-third,
+.row .box-fourth{
+    background-color: var(--third-color);
 }
-.row .box-second{
+/* .row .box-second{
     background-color: var(--success-color);
 }
 .row .box-third{
@@ -344,12 +348,12 @@ body{
 }
 .row .box-fourth{
     background-color: var(--danger-color);
-}
+} */
 
 
 .box span{
-    margin: 5px 0;
-    font-size: 17px;
+    margin: 20px 0;
+    font-size: 4em;
     position: relative;
 }
 
